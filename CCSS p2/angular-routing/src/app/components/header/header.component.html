@@ -1,0 +1,9 @@
+<div class="header">
+    <a (click)="navigateTo('home')" class="logo">CompanyLogo</a>
+    <div class="header-right">
+        <a [class.active]="checkForActiveClass('/home')" (click)="navigateTo('home')">Home</a>
+        <a [class.active]="checkForActiveClass('/aboutus')" (click)="navigateTo('aboutus')">About us</a>
+        <a [class.active]="checkForActiveClass('/login')" (click)="navigateTo('login')">Login</a>
+        <a [class.active]="checkForActiveClass('/inquiry')" (click)="navigateTo('inquiry')">Inquiry</a>
+    </div>
+</div>

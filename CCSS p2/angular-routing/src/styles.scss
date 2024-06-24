@@ -1,0 +1,347 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+/* header styles */
+header {
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo img {
+	height: 65px;
+	width: 65px;
+}
+
+.main-nav {
+	display: flex;
+}
+
+.main-nav li {
+	margin-right: 2em;
+}
+
+.main-nav li a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+.main-nav li a:hover {
+	background-color: #ddd;
+}
+
+.menu-toggle {
+	display: none;
+	color: #333;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+	}
+
+	.main-nav {
+		display: none;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.main-nav li {
+		margin: 0;
+	}
+
+	.main-nav li a {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.show-menu {
+		display: flex;
+	}
+}
+
+/* welcome section styles */
+.welcome-section {
+	height: calc(100vh - 80px);
+	background-image: url('Home.jpeg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+}
+
+.welcome-content {
+	color: #fff;
+	padding-left: 2em;
+	max-width: 600px;
+}
+
+.welcome-content h1 {
+	font-size: 3.5rem;
+	margin-bottom: 1em;
+}
+
+.welcome-content p {
+	font-size: 1.2rem;
+	margin-bottom: 2em;
+}
+
+.btn {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #ddd;
+}
+
+/* about section styles */
+.about-section {
+	padding: 2em 0;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-50 {
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.col-50 img {
+	max-width: 90%;
+}
+
+.col-50 h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1em;
+}
+
+.col-50 p {
+	font-size: 1.2rem;
+	margin-bottom: 2em;
+}
+
+/* services section styles */
+.services-section {
+	background-color: #f2f2f2;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2em;
+	margin-top: 1em;
+}
+
+.service-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service-item i {
+	font-size: 3rem;
+	padding: 1em;
+	background-color: #fff;
+	color: #333;
+	border-radius: 50%;
+	margin-bottom: 1em;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1em;
+}
+
+.service-item p {
+	font-size: 1.2rem;
+}
+
+/* testimonials section styles */
+.testimonials-section {
+	padding: 2em 0;
+	text-align: center;
+}
+
+.testimonial-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2em;
+	margin-top: 1em;
+}
+
+.testimonial-item {
+	background-color: #f2f2f2;
+	padding: 2em;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+	font-size: 1.2rem;
+	margin-bottom: 1em;
+}
+
+.testimonial-item h3 {
+	font-size: 1.5rem;
+	margin-top: 1em;
+}
+
+/* footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 2em 0;
+}
+
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-logo img {
+	height: 50px;
+	margin-right: 2em;
+}
+
+.footer-social a {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-right: 1em;
+}
+
+.footer-links ul {
+	display: flex;
+	list-style: none;
+}
+
+.footer-links li {
+	margin-right: 2em;
+}
+
+.footer-links a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+	text-decoration: underline;
+}
+
+/* responsive styles */
+@media only screen and (max-width: 1200px) {
+	.header-container {
+		max-width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	.main-nav {
+		display: none;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+
+	.col-50 {
+		flex-basis: 100%;
+	}
+
+	.testimonial-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.header-container {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.main-nav li a {
+		padding: 10px 0;
+	}
+
+	.welcome-content h1 {
+		font-size: 2.5rem;
+	}
+
+	.welcome-content p {
+		font-size: 1rem;
+	}
+
+	.col-50 h2 {
+		font-size: 2rem;
+	}
+
+	.col-50 p {
+		font-size: 1rem;
+	}
+
+	.services-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.service-item i {
+		font-size: 2rem;
+	}
+
+	.service-item h3 {
+		font-size: 1.2rem;
+	}
+
+	.service-item p {
+		font-size: 1rem;
+	}
+
+	.testimonial-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

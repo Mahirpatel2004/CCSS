@@ -1,0 +1,22 @@
+<div class="card">
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+      <!-- <input type="text"> -->
+      
+      <div class="dropdown">
+        <button class="button" (click)="isFaqDropdownOpen = !isFaqDropdownOpen">FAQs</button>
+        @if(isFaqDropdownOpen === true){
+            <div class="dropdown-content">
+                @for (faq of faqs; track faq) {
+                    <a >{{faq.title}}</a>
+                }
+            </div>
+        }
+      </div>
+
+    </div>
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+      <button class="button">Chat</button>
+    </div>
+  </div>

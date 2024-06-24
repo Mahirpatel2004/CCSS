@@ -1,0 +1,162 @@
+ .card {
+    height: 38vw;
+    width: 35vw;
+    background-color: white;
+    margin-left: 30vw;
+    margin-top: 1vw;
+    box-shadow: 2vw 2vw 12vw 3vw #ccc;
+
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        display: block;
+
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      /* Show the dropdown menu on hover */
+      
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+      
+  }
+    .card #message-section::-webkit-scrollbar {
+    width: 10px;
+  }
+   .card #message-section {
+    height: 32vw;
+    padding: 0 2.5vw;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+   .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+   .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+   .card #message-section #bot,
+   .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    min-height: 1.5vw;
+    border: 0.15vw solid #777;
+    background-color: #fff;
+    border-radius: 0px 1.5vw 1.5vw 1.8vw;
+    padding: 1vw;
+    margin: 1.5vw 0;
+  }
+   .card #message-section #user {
+    border: 1.5px solid #000;
+    border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+    background-color: #000;
+    float: right;
+  }
+   .card #message-section #user #user-response {
+    color: #fff;
+  }
+   .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 1.2vw;
+    font-size: 1.2vw;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+  }
+   .card #input-section {
+    z-index: 1;
+    padding: 0 2.3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 4vw;
+    width: 100%;
+  }
+   .card #input-section input {
+    color: #000;
+    min-width: 0.5vw;
+    outline: none;
+    height: 5vw;
+    width: 26vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000 0.1vw;
+  }
+   .card .send {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 1.4vw;
+    margin-right: 0vw;
+    padding: 0;
+    position: relative;
+    outline: none;
+  }
+   .card .send .circle {
+    position: relative;
+    width: 4.8vw;
+    height: 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .card .send .circle i {
+    font-size: 3vw;
+    margin-left: -1vw;
+    margin-top: 1vw;
+  }
+
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
